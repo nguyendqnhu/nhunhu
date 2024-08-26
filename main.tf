@@ -19,8 +19,8 @@ provider "google" {
     project = "neon-rampart-433707-f3"
 }
 
-resource "google_storage_bucket" "my_bucket_1" {
-  name          = "example-nhuhomework-bucket"
-  location      = "us"
+resource "google_storage_bucket" "my_bucket" {
+  name          = "example-nhunhu-bucket"
+  location      = "asia"
   force_destroy = true
 }
