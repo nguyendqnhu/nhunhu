@@ -7,10 +7,17 @@ terraform {
   }
 }
 
-provider "google" {
-  project = "neon-rampart-433707-f3"
+
+variable "google_credentials" {
+  type      = string
+  sensitive = true
+  default   = "" 
 }
 
+provider "google" {
+    credentials = jsondecode(var.google_credentials)
+    project = "neon-rampart-433707-f3"
+}
 
 resource "google_storage_bucket" "my_bucket_1" {
   name          = "example-nhuhomework-bucket"
