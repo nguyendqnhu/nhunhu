@@ -15,7 +15,7 @@ variable "google_credentials" {
 }
 
 provider "google" {
-    credentials = jsondecode(var.google_credentials)
+    credentials = var.google_credentials
     project = "neon-rampart-433707-f3"
 }
 
