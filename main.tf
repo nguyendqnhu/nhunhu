@@ -19,11 +19,6 @@ provider "google" {
     project = "neon-rampart-433707-f3"
 }
 
-resource "google_storage_bucket" "my_bucket" {
-  name          = "example-nhunhu-bucket"
-  location      = "asia"
-  force_destroy = true
-}
 
 resource "google_storage_bucket" "my_2nd_bucket" {
   name          = "nhunhu-bucket-2"
