@@ -24,3 +24,9 @@ resource "google_storage_bucket" "my_bucket" {
   location      = "asia"
   force_destroy = true
 }
+
+resource "google_storage_bucket" "my_2nd_bucket" {
+  name          = "nhunhu-bucket-2"
+  location      = "asia"
+  force_destroy = true
+}
